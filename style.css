@@ -74,6 +74,13 @@ body {
   background-color: #5022c3;
   font-weight: lighter;
   font-size: larger;
+  cursor: pointer;
+}
+.categories h3:hover {
+  background-color: transparent;
+  color: black;
+  border: solid #5022c3 1px;
+  transition: 0.5s;
 }
 .main_image {
   position: relative;
@@ -87,6 +94,18 @@ body {
   background-color: white;
   color: black;
   padding: 10px;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .main_image img {
@@ -137,6 +156,12 @@ body {
   flex-basis: 25%;
   flex-grow: 1;
   text-align: center;
+  cursor: pointer;
+}
+.topic_container p:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
 }
 .popular {
   padding: 10px;
